@@ -1,0 +1,84 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* display: grid; */
+  height: 100vh;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Hero Section */
+#home {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* Projects Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.focus {
+  color: darkgreen;
+}
